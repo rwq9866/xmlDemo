@@ -170,17 +170,21 @@ public class Tower {
 				+ ", isbegin=" + isbegin + ", tagstyle=" + tagstyle + ", remark=" + remark + ", icon=" + icon + "]";
 	}
 
-	public Tower(String name, Integer torder,Double longitude, Double latitude, String isbegin, String tagstyle, String remark,
-			String icon) {
+	
+
+	public Tower(String lineId, Integer torder, String name, Double longitude, Double latitude, String isbegin,
+			String tagstyle, String remark, String icon, Long addtime) {
 		super();
-		this.name = name;
+		this.lineId = lineId;
 		this.torder = torder;
+		this.name = name;
 		this.longitude = longitude;
 		this.latitude = latitude;
 		this.isbegin = isbegin;
 		this.tagstyle = tagstyle;
 		this.remark = remark;
 		this.icon = icon;
+		this.addtime = addtime;
 	}
 
 	public Tower() {

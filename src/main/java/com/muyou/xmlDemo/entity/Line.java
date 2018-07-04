@@ -116,6 +116,30 @@ public class Line {
 	public void setUpdatetime(Long updatetime) {
 		this.updatetime = updatetime;
 	}
+
+	public Line(String id, String name, String status, Double startLongitude, Double startLatitude, String remark,
+			Long addtime, Long updatetime) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.status = status;
+		this.startLongitude = startLongitude;
+		this.startLatitude = startLatitude;
+		this.remark = remark;
+		this.addtime = addtime;
+		this.updatetime = updatetime;
+	}
+
+	public Line() {
+		super();
+	}
+
+	@Override
+	public String toString() {
+		return "Line [id=" + id + ", name=" + name + ", status=" + status + ", startLongitude=" + startLongitude
+				+ ", startLatitude=" + startLatitude + ", remark=" + remark + ", addtime=" + addtime + ", updatetime="
+				+ updatetime + "]";
+	}
 	
 	
 }

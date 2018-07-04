@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>demo</title>
+<script type="text/javascript" th:src = "@{/webjars/jquery/3.3.1-1/jquery.js}"></script>
+<script type="text/javascript" th:src = "@{../js/demo.js}"></script>
 </head>
 <body>
-
+	<div>
+		<fieldset>
+			<legend>添加</legend>
+			<p>url:&nbsp;<input type="text" id="url" placeholder="请输入url..."/></p>
+			<p>lineName:&nbsp;<input type="text" id="lineName" placeholder="请输入lineName..."/></p>
+			<P>
+				<input type="button" id="add" value="提交"/>
+			</P>
+		</fieldset>
+	</div>
 </body>
 </html>
